@@ -13,6 +13,7 @@
 		CCB6D3901C2090BA000AAF5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB6D38F1C2090BA000AAF5D /* Images.xcassets */; };
 		CCB6D3931C2090BA000AAF5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB6D3911C2090BA000AAF5D /* LaunchScreen.xib */; };
 		CCB6D39F1C2090BA000AAF5D /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D39E1C2090BA000AAF5D /* tipsTests.swift */; };
+		CCB6D3AB1C20B458000AAF5D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D3AA1C20B458000AAF5D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CCB6D3981C2090BA000AAF5D /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB6D39D1C2090BA000AAF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB6D39E1C2090BA000AAF5D /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		CCB6D3AA1C20B458000AAF5D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CCB6D3881C2090BA000AAF5D /* AppDelegate.swift */,
 				CCB6D38A1C2090BA000AAF5D /* ViewController.swift */,
 				CCB6D38C1C2090BA000AAF5D /* Main.storyboard */,
+				CCB6D3AA1C20B458000AAF5D /* SettingsViewController.swift */,
 				CCB6D38F1C2090BA000AAF5D /* Images.xcassets */,
 				CCB6D3911C2090BA000AAF5D /* LaunchScreen.xib */,
 				CCB6D3861C2090BA000AAF5D /* Supporting Files */,
@@ -156,7 +159,9 @@
 		CCB6D37B1C2090BA000AAF5D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = SergeGuest;
 				TargetAttributes = {
 					CCB6D3821C2090BA000AAF5D = {
@@ -214,6 +219,7 @@
 			files = (
 				CCB6D38B1C2090BA000AAF5D /* ViewController.swift in Sources */,
 				CCB6D3891C2090BA000AAF5D /* AppDelegate.swift in Sources */,
+				CCB6D3AB1C20B458000AAF5D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SergeGuest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SergeGuest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +379,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SergeGuest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
@@ -385,6 +395,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SergeGuest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
@@ -409,6 +420,7 @@
 				CCB6D3A41C2090BA000AAF5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCB6D3A51C2090BA000AAF5D /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +429,7 @@
 				CCB6D3A71C2090BA000AAF5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
